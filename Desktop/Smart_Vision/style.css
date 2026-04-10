@@ -1,0 +1,318 @@
+/* إعدادات عامة */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #515066; /* لون احتياطي */
+  background-image: url("bg.jpg"); /* تأكد أن الصورة اسمها bg.jpg وموجودة في 
+  background-size: cover; /* تخلي الصورة مغطية كل الشاشة */
+  background-position: center; /* تخلي الصورة في النص */
+  background-attachment: fixed; /* حركة احترافية: الخلفية ثابتة والكلام بيتحرك فوقيها */
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Cairo", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cyan {
+  color: #00e5ff;
+}
+
+/* Navbar */
+header {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #00e5ff;
+}
+
+.btn-top-right {
+  text-decoration: none;
+  color: black;
+  background-color: #00e5ff;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 80px;
+}
+
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.badg-purple {
+  background: rgba(103, 58, 183, 0.2);
+  border: 1px solid #673ab7;
+  color: #a285ff;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.hero-title {
+  font-family: "Poiret One", cursive;
+  font-size: 5rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  color: #999;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-cyan {
+  text-decoration: none;
+  color: black;
+  background-color: #00e5ff;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn-outline {
+  text-decoration: none;
+  color: white;
+  border: 1px solid #555;
+  padding: 15px 30px;
+  border-radius: 8px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image img {
+  max-width: 90%;
+  filter: drop-shadow(0 0 30px rgba(0, 229, 255, 0.2));
+}
+
+/* Mission & Vision Section */
+.container-column {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.mission-cards {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  flex: 1;
+  transition: 0.4s;
+}
+
+.glass-card:hover {
+  border-color: #00e5ff;
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-10px);
+}
+
+.glass-card .icon i {
+  font-size: 2.5rem; /* حجم الأيقونة */
+  color: #eceff0; /* لون النيون بتاعنا */
+  filter: drop-shadow(0 0 8px rgba(230, 239, 239, 0.5)); /* يخليها بتنور */
+  margin-bottom: 20px;
+}
+
+.glass-card h3 {
+  color: #00e5ff;
+  margin-bottom: 15px;
+}
+
+.glass-card p {
+  color: #aaa;
+  line-height: 1.8;
+}
+/* --- تنسيق قسم الرؤية والرسالة (Mission & Vision) --- */
+.container-column {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.mission-cards {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03); /* تأثير زجاجي شفاف */
+  backdrop-filter: blur(15px); /* تنعيم الخلفية خلف الكارت */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  flex: 1;
+  transition: 0.4s ease;
+  text-align: center;
+}
+
+.glass-card:hover {
+  border-color: #00e5ff; /* نيون أزرق عند اللمس */
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-10px); /* الكارت يترفع لفوق شوية */
+}
+
+.glass-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.glass-card h3 {
+  color: #00e5ff;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.glass-card p {
+  color: #aaa;
+  line-height: 1.8;
+}
+
+/* --- تنسيق الفوتر (Footer) --- */
+footer {
+  background-color: #050505;
+  padding: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 100px;
+  width: 100%;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer-copy p {
+  color: #444;
+  font-size: 0.8rem;
+}
+
+.footer-socials a {
+  color: #00e5ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  text-shadow: 0 0 10px #00e5ff;
+  color: white;
+}
+
+/* عشان الموقع يفضل شكله حلو على الموبايل */
+@media (max-width: 768px) {
+  .mission-cards {
+    flex-direction: column;
+  }
+  .footer-flex {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
