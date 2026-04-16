@@ -101,7 +101,7 @@ header nav ul li a:hover {
   color: #a285ff;
   padding: 5px 15px;
   border-radius: 50px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-bottom: 20px;
   display: inline-block;
 }
@@ -129,8 +129,8 @@ header nav ul li a:hover {
   text-decoration: none;
   color: black;
   background-color: #00e5ff;
-  padding: 15px 30px;
-  border-radius: 8px;
+  padding: 17px 32px;
+  border-radius: 9px;
   font-weight: bold;
 }
 
@@ -138,18 +138,18 @@ header nav ul li a:hover {
   text-decoration: none;
   color: white;
   border: 1px solid #555;
-  padding: 15px 30px;
-  border-radius: 8px;
+  padding: 17px 32px;
+  border-radius: 9px;
 }
 
 .hero-image {
-  flex: 1;
+  flex: 0.8;
   display: flex;
   justify-content: flex-end;
 }
 
 .hero-image img {
-  max-width: 90%;
+  max-width: 106%;
   filter: drop-shadow(0 0 30px rgba(0, 229, 255, 0.2));
 }
 
@@ -206,7 +206,7 @@ header nav ul li a:hover {
   color: #aaa;
   line-height: 1.8;
 }
-/* --- تنسيق قسم الرؤية والرسالة (Mission & Vision) --- */
+
 .container-column {
   max-width: 1200px;
   margin: 100px auto;
@@ -217,22 +217,22 @@ header nav ul li a:hover {
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   margin-bottom: 50px;
   color: white;
 }
 
 .mission-cards {
   display: flex;
-  gap: 30px;
+  gap: 25px;
   width: 100%;
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.03); /* تأثير زجاجي شفاف */
-  backdrop-filter: blur(15px); /* تنعيم الخلفية خلف الكارت */
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 40px;
+  padding: 25px;
   border-radius: 20px;
   flex: 1;
   transition: 0.4s ease;
@@ -240,9 +240,9 @@ header nav ul li a:hover {
 }
 
 .glass-card:hover {
-  border-color: #00e5ff; /* نيون أزرق عند اللمس */
+  border-color: #00e5ff;
   background: rgba(255, 255, 255, 0.05);
-  transform: translateY(-10px); /* الكارت يترفع لفوق شوية */
+  transform: translateY(-10px);
 }
 
 .glass-card .icon {
@@ -277,19 +277,19 @@ footer {
 }
 
 .footer-info .logo {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .footer-info p {
   color: #666;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .footer-copy p {
   color: #444;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .footer-socials a {
@@ -305,14 +305,109 @@ footer {
   color: white;
 }
 
-/* عشان الموقع يفضل شكله حلو على الموبايل */
 @media (max-width: 768px) {
   .mission-cards {
     flex-direction: column;
   }
   .footer-flex {
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     text-align: center;
   }
+}
+.icon i {
+  font-size: 1.8rem !important;
+}
+
+.glass-card {
+  padding: 15px !important;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 1 auto 9px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-title {
+  font-size: 2.5rem !important;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+}
+
+header nav ul li a {
+  font-size: 0.8rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+}
+
+.btn-cyan,
+.btn-outline {
+  width: 90% !important;
+  padding: 2px !important;
+  font-size: 1rem !important;
+  text-align: center;
+  display: block;
+}
+
+.hero-text {
+  font-size: 0.8rem !important;
+  text-align: center;
+  padding: 0 9px;
+}
+@media (max-width: 768px) {
+    
+    .hero-title {
+        font-size: 2.2rem !important;
+        line-height: 1.2;
+    }
+
+    .hero-text {
+        font-size: 1rem !important;
+        padding: 0 10px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .btn-cyan, .btn-outline {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    .glass-card {
+        padding: 20px !important;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .icon i {
+        font-size: 1.8rem !important;
+    }
+
+    .icon {
+        margin: 0 auto 15px auto;
+    }
 }
